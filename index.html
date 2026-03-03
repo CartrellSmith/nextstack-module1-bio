@@ -1,44 +1,133 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Bio | NeXTStack</title>
-    </head>
-    <body>
-        <header>
-            <h1> My Bio Page</h1>
-            <p>NeXTStack - Week 1</p>
-        </header>
 
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <img src="assets/images/profile.jpg" alt="Photo of Cartrell"width="200"/>
-                <p>My name is Cartrell.</p>
-                <p>I joined NeXTStack because of health issues I need a career change.</p>
-            </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartrell's Bio | NeXTStack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <section>
-                <h2>Skills I'm Building</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>Professional habits</li>
-                    <li>Problem-solving</li>
-                </ul>
-            <section>
+<body>
+    <header>
+        <h1 class="my_name"> Cartrell Smith</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Bio</li>
+                <li>Video</li>
+                <li>Photos</li>
+                <li>Tribute</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
 
-            </section>        
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="https://github.com/" target="_blank" rel="noopener">My GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">My LinkedIn</a></li>
-                </ul>
-            </section>
-        </main>
+    <main>
+        <h2 class="my_story">My Story</h2>
+        <div class="profile">
+            <img src="assets/images/profile_2.jpeg"
+                alt="Cartrell's cartoon version, smiling with glasses in a dark suit on a yellow background." width="140" />
+        </div>
 
+        <div class="bio">
+            <p class="my_story_2">Cartrell D. Smith is a dedicated learner and emerging developer whose journey has been
+                shaped by resilience,
+                purpose, and a commitment to growth. After facing health challenges that pushed him to rethink his
+                career
+                path, he made the bold decision to join NeXTStack, stepping into the world of software development with
+                determination and clarity.</p>
+            <p class="my_story_2">He brings with him a rich background of service, leadership, and communication. Before
+                transitioning into
+                tech, Cartrell worked as a Remote Customer Service Representative, an Elementary School Teacher, and a
+                currently still a Youth Pastor. These roles strengthened his ability to guide, support, and connect with people from all walks
+                of
+                life. His time at NeXTStack as a Jr. Software Developer reflects his drive to build new skills while
+                applying the professionalism he has carried throughout his career.</p>
+            <p class="my_story_2">As he grows in the tech field, Cartrell is steadily building foundational abilities
+                such as HTML, strong
+                professional habits, and effective problem‑solving. These skills complement his long-standing strengths
+                in
+                customer service management, team leadership, public speaking, critical thinking, and project management
+                across ministry and classroom environments.
+            <p class="my_story_2">Cartrell’s educational journey includes studying Software Development at the
+                Mississippi Coding Academy,
+                earning a B.A. in General Studies from Alcorn State University, completing an Associate of Arts at
+                Copiah‑Lincoln Community College, and graduating from Natchez High School. Along the way, he also earned
+                certifications as a Licensed Minister and through the Alternative Pathway to Teacher Licensing program.
+            </p>
+            <p class="my_story_2">His dedication and impact have not gone unnoticed. Cartrell has been honored with the
+                Key to the City of
+                Natchez, recognized with the Amazing Teacher Award, and celebrated through Staff Spotlight. These 
+                acknowledgments reflects both his character and his commitment to serving others.</p>
+        </div>
+
+
+        <h2 class="Contact_Form">Contact Require Form</h2>
+        <form action="#" method="post" class="contact">
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Contact Preference</legend>
+                <div class="box">
+                    <input type="radio" id="prefEmail" name="contactPreference" value="email">
+                    <label for="prefEmail">Email</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="prefPhone" name="contactPreference" value="phone">
+                    <label for="prefPhone">Phone</label>
+                </div>
+            </fieldset>
+
+            <div class="agreement">
+                <input type="checkbox" id="agree" name="agree" value="yes" required>
+                <label for="agree">I agree to the terms.</label>
+            </div>
+
+            <button>Submit</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p class="Contact_Heading">Contacts and Links</p>
+        <ul>
+            <li><a href="mailto:min.cdsmith@gmail.com" target="_blank" rel="noopener">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/cartrellsmith" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/CartrellSmith" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
         <footer>
-            <p>Week 1 - Day 2</p>
-        <footer>
-    </body>
+</body>
 <html>
+
+<!-- 02-12-2026
+    - Updated the title to include "NeXTStack"
+    - Added alt text to the profile image
+    - Added a footer with the date of the last update
+    - Added mailto link to the email address in the contact section
+    - Reduced image width to 140px for better layout
+    - Changed background to royal blue for better contrast and readability 
+    - Added a horizontal rule (`<hr>`) for visual separation between sections
+    - Styled the submit button with a goldenrod background color for better visibility
+    - Added a textarea for the message input in the contact form
+    02-24-2026
+    - Added CSS
+-->

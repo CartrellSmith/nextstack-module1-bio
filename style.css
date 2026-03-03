@@ -1,0 +1,198 @@
+header{background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.my_name{
+    text-decoration: underline;
+    text-decoration-color: crimson;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+}
+
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.my_story {
+    text-decoration: underline;
+    text-decoration-color: crimson;
+
+}
+
+.profile {
+ border: 1px solid crimson;
+    border-radius: 16px;
+    display: inline-block;
+    margin-bottom:16px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 5px;
+    padding: .5rem;
+}
+
+.profile img{
+    filter: grayscale(100%);
+}
+
+.bio{
+    border: 1px solid crimson;
+    border-radius: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 5px;
+    padding: .5rem;
+}
+
+.my_story_2{
+    text-align: left;
+    text-indent: 3%;
+}
+br{
+    text-indent: 3%;
+}
+
+ul, a{
+    color: white;
+    font-size: small;
+}
+
+.Contact_Form{
+    background-size: auto;
+    margin: 16px;
+    padding: auto;    
+}
+
+@media (max-width: 600px) {
+   .Contact_Form, .message{
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: block;
+    }
+    .contact {
+        width: 100%;
+        padding: 10px;}
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    fieldset {
+        text-align: left;
+    }
+
+    fieldset div {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+.contact{
+    line-height: 2rem;
+    text-align: left;
+}
+
+legend{
+    text-align: center;
+}
+
+fieldset{
+    text-align: left;
+    border: 1px solid crimson;
+}
+
+.agreement{
+    text-align: left;
+}
+
+button{
+    background-color: crimson;
+    color: black;
+    border: white;
+    text-align: center;
+    padding: auto;
+    margin: 16px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(red, green, blue, alpha);
+    cursor: alias
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: right;
+}
+
+.Contact_Heading {
+    background-color: crimson;
+    color: black;
+    padding: 6px 37px;
+    font-size: small;
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 8px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    font-size: small;
+    text-decoration: none;
+}
+
+.contact div,
+.contact fieldset,
+.contact .agreement {
+    text-align: left;
+}
+
+.message textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.message textarea{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
